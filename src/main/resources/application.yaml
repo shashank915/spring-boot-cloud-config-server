@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shashank915/spring-cloud-configuration
+          search-paths: appConfig
+#          uri: https://github.com/shashank915/Microservices-With-Spring-Student-Files
+#          searchPaths: ConfigData
+
